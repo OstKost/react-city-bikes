@@ -1,0 +1,45 @@
+@import 'resources/colors/colors';
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  grid-area: title;
+  text-align: center;
+}
+
+.lists {
+  flex: 1;
+  display: grid;
+  grid-template-areas:
+    'networksTitle stationsTitle'
+    'networks stations';
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: min-content 1fr;
+  margin-bottom: 40px;
+}
+
+.listTitle {
+  grid-area: list-header;
+  color: $gray;
+  text-align: center;
+}
+
+.networksTitle {
+  grid-area: networksTitle;
+}
+
+.networks {
+  grid-area: networks;
+  border-right: 1px dashed $gray;
+}
+
+.stationsTitle {
+  grid-area: stationsTitle;
+}
+.stations {
+  grid-area: stations;
+}

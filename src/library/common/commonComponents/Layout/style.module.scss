@@ -1,0 +1,39 @@
+@import 'resources/colors/colors.scss';
+
+.container {
+  margin: 0 auto;
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 30px;
+  height: 60px;
+  box-shadow: 0px 3px 3px $gray-light;
+}
+
+.navLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: 200ms;
+  color: $dim;
+  text-decoration: none;
+
+  &:hover {
+    background: $blue;
+  }
+}
+
+.activeNavLink {
+  color: $brown;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 60px);
+}

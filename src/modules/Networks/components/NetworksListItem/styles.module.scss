@@ -1,0 +1,29 @@
+@import 'resources/colors/colors.scss';
+
+.item {
+  display: flex;
+  align-items: center;
+  height: 41px;
+  border-bottom: 1px solid $gray-light;
+}
+
+.link {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0px 20px;
+  font-weight: bold;
+  color: $dim;
+  line-height: 20px;
+  text-decoration: none;
+  transition: 200ms;
+
+  &:hover {
+    background: $blue;
+  }
+}
+
+.activeNavLink {
+  color: $brown;
+}
