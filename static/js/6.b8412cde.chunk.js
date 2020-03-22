@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-city-bikes"]=this["webpackJsonpreact-city-bikes"]||[]).push([[6],{97:function(e,t,n){"use strict";n.r(t);var a=n(1),r=n.n(a),c=n(15);t.default=function(){var e=Object(c.g)().goBack;return r.a.createElement("div",{style:{textAlign:"center"}},r.a.createElement("h1",null,"404 error"),r.a.createElement("h2",null,"Page not found"),r.a.createElement("button",{type:"button",onClick:e,style:{fontSize:20,padding:15,background:"gray",borderRadius:15}},"Go back"))}}}]);
+//# sourceMappingURL=6.b8412cde.chunk.js.map
