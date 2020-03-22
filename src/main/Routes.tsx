@@ -1,18 +1,19 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Loadable from 'react-loadable';
+import PageLoader from 'library/common/commonComponents/PageLoader/PageLoader';
 
 const Networks = Loadable({
   loader: () => import('modules/Networks/NetworksContainer'),
-  loading: () => <h1>Loading</h1>
+  loading: PageLoader
 });
 const Dashboard = Loadable({
   loader: () => import('modules/Dashboard/DashboardModule'),
-  loading: () => <h1>Loading</h1>
+  loading: PageLoader
 });
 const NotFound = Loadable({
   loader: () => import('modules/NotFound/NotFoundModule'),
-  loading: () => <h1>Loading</h1>
+  loading: PageLoader
 });
 
 const Routes = () => {
