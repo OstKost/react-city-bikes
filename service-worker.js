@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-city-bikes/precache-manifest.ef8d8ba806997fe0d5cb7737e15d6ea1.js"
+  "/react-city-bikes/precache-manifest.d1e4d9215c7ce7d7d02946b698b4ac7a.js"
 );
 
 self.addEventListener('message', (event) => {
