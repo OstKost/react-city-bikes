@@ -1,6 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/integration/react';
 
 import { store, persistor } from 'main/store/configureStore';
@@ -11,11 +11,12 @@ function App() {
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <Router>
+        {/* Add basename for gh-pages basename='react-city-bikes' */}
+        <BrowserRouter>
           <Layout>
             <Routes />
           </Layout>
-        </Router>
+        </BrowserRouter>
       </PersistGate>
     </Provider>
   );
